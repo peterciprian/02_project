@@ -57,7 +57,7 @@ h4 {
 .mp3 {
     color: black;
     text-align: center;
-    padding-top: 7%;
+    padding: 7% 0 12%;
 }
 
 .customInput3 {
@@ -70,4 +70,29 @@ h4 {
     background: #21728f;
     font-size: 16px;
     box-sizing: border-box;
+}
+
+footer {
+    padding-top: 5px;
+    height: 50px;
+}
+
+.footerClass {
+    padding: 10px 5%;
+    color: grey;
+}
+
+.footerClass img {
+    float: right;
+    margin-left: 1%;
+    width: 3%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.footerClass img:hover {
+    transition: filter .3s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transform: scale(1.3);
 }
