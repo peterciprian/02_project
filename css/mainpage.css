@@ -40,6 +40,7 @@ h4 {
 
 .imgRight img {
     width: 70%;
+    height: 70%;
     margin-left: 20px;
     -webkit-box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
     -moz-box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
@@ -76,13 +77,14 @@ h4 {
 #customInput2 {
     display: inline-block;
     border: none;
-    padding: 7px;
+    padding: 10px;
     border-radius: 0px 25px 25px 0px;
     width: 100px;
     color: white;
     background: #113847;
     outline: none;
     text-decoration: none;
+    margin-left: -4px;
 }
 
 .mp3 {
