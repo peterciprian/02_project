@@ -6,11 +6,11 @@ body {
 /* ------- UPPER PART -------------------------------------------- */
 
 .upper {
-    padding: 6px;
-    height: 515px;
     background: linear-gradient(to top right, #4BCDE3, #023051);
+    height: 515px;
     margin: 0 auto;
     overflow: hidden;
+    padding: 6px;
 }
 
 .upper-sub>div {
@@ -18,33 +18,33 @@ body {
 }
 
 .upper-sub {
-    width: 880px;
-    margin: auto;
     height: 520px;
+    margin: auto;
+    width: 880px;
 }
 
 .app-picture {
-    position: relative;
-    margin: 5px;
-    width: 290px;
     height: 518px;
+    margin: 5px;
+    position: relative;
+    width: 290px;
 }
 
 #iphone-pic {
-    width: 280px;
-    height: unset;
     border-radius: 47px 47px 0 0;
+    height: unset;
     margin: 5px;
+    width: 280px;
 }
 
 #phonescreen {
-    width: 254px;
     height: 479px;
-    position: absolute;
-    top: 36px;
     left: 19px;
     opacity: 1;
+    position: absolute;
+    top: 36px;
     transition: opacity 2s;
+    width: 254px;
 }
 
 #phonescreen:hover {
@@ -52,29 +52,29 @@ body {
 }
 
 #phonescreen2 {
-    width: 254px;
     height: 479px;
+    left: 19px;
     position: absolute;
     top: 37px;
-    left: 19px;
+    width: 254px;
 }
 
 .app-intro {
-    font-family: inherit;
-    width: 480px;
-    margin: 12px 0 0 90px;
     color: white;
+    font-family: inherit;
+    margin: 12px 0 0 90px;
     vertical-align: top;
+    width: 480px;
 }
 
 .app-intro>a {
-    text-transform: uppercase;
-    font-size: 25px;
-    margin: 0;
-    color: white;
+    color: inherit;
     font-family: 'Josefin Sans', sans-serif;
-    text-decoration: none;
+    font-size: 25px;
     font-weight: 600;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .app-intro>a:hover {
@@ -82,26 +82,26 @@ body {
 }
 
 .app-intro h1 {
-    font-size: 56px;
-    margin: 12px 0 40px 0;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 56px;
     line-height: 1.05em;
+    margin: 12px 0 40px 0;
 }
 
 .description.white-text {
-    margin-bottom: 40px;
-    font-size: 17px;
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    margin-bottom: 40px;
 }
 
 .download-button {
-    text-decoration: none;
     background: white;
-    padding: 8px 18px;
     border-radius: 30px;
     color: rgb(7, 152, 189);
     font-size: 20px;
+    padding: 8px 18px;
+    text-decoration: none;
     transition: .3s;
 }
 
@@ -112,10 +112,10 @@ body {
 /* ------ LOWER PART ---------------------------------- */
 
 .lower {
-    margin: 100px auto;
-    width: 1000px;
-    height: 600px;
     font-family: 'Nunito', sans-serif;
+    height: 600px;
+    margin: 100px auto;
+    width: 870px;
 }
 
 .lower .sub-container {
@@ -123,38 +123,77 @@ body {
 }
 
 .form-area {
-    width: 650px;
+    vertical-align: top;
+    width: 605px;
 }
 
 .alt-contact-area {
-    width: 275px;
-    vertical-align: 200px;
+    line-height: 1.5em;
+    vertical-align: top;
+    width: 260px;
+}
+
+.alt-contact-area>h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 0 35px 0;
 }
 
 form {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
     margin-right: 40px;
 }
 
 form input[type='text'],
 textarea {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px;
     border: 1px solid lightgrey;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
 }
 
 h3#contact {
-    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
 [type='submit'] {
     background: #21728F;
     border: none;
-    padding: 10px 28px;
     border-radius: 30px;
     color: rgba(255, 255, 255, 0.808);
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 8px 24px;
+}
+
+[type='submit']:hover {
+    background: #023051;
+    cursor: pointer;
 }
 
 p>span {
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
+}
+
+.lower a,
+.lower p.description {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.lower a:hover {
+    font-weight: bold;
+}
+
+p.phonemail {
+    margin: 2px 0;
+}
+
+p.input-par {
+    margin: 12px 0 20px 0;
 }
