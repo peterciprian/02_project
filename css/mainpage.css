@@ -1,5 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
+    margin: 0;
 }
 
 h1,
@@ -17,6 +18,35 @@ h4 {
     margin: 0;
 }
 
+.mp1 {
+    background: white;
+    height: 300px;
+    padding: 7% 17%;
+}
+
+.paragraphLeft {
+    float: left;
+    display: inline-block;
+    width: 40%;
+    height: 100;
+}
+
+.imgRight {
+    float: right;
+    display: inline-block;
+    width: 40%;
+    height: 100;
+}
+
+.imgRight img {
+    width: 70%;
+    height: 70%;
+    margin-left: 20px;
+    -webkit-box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
+    box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
+}
+
 .mid {
     text-align: center;
     padding: 3% 25%;
@@ -31,7 +61,7 @@ h4 {
 .email {
     color: white;
     text-align: center;
-    padding: 7% 25%;
+    padding: 5% 25%;
 }
 
 #customInput1 {
@@ -41,6 +71,7 @@ h4 {
     border-radius: 25px 0px 0px 25px;
     width: 65%;
     outline: none;
+    text-decoration: none;
 }
 
 #customInput2 {
@@ -52,6 +83,8 @@ h4 {
     color: white;
     background: #113847;
     outline: none;
+    text-decoration: none;
+    margin-left: -4px;
 }
 
 .mp3 {
@@ -70,6 +103,7 @@ h4 {
     background: #21728f;
     font-size: 16px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 footer {
