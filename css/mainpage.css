@@ -1,13 +1,44 @@
 body {
     font-family: 'Nunito', sans-serif;
+    margin: -8px;
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: 'Nunito', sans-serif;
 }
+/*Máté része*/
+.header{
+    background: #21728f;
+    color: #f5f5f5;
+    width: auto;
+    height: 20%;
+    overflow: auto;
+}
+headlinks{
+    float: right;
+}
+h5{
+    padding-top: 5px;
+    text-align: right;
+}
+li {
+    display: inline;
+}
+.phonescr{
+    display: block;
+    float: left;
+    block-size: 200px;
+}
+.text{
+    text-align: center;
+    clear:right;
+}
+
+
 
 /* Miro része */
 
