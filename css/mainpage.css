@@ -8,7 +8,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 /*Máté része*/
 .header{
@@ -35,8 +35,10 @@ li {
     block-size: 200px;
 }
 .text{
+    float: left;
+    width: 200px;
+    height: 300px;
     text-align: center;
-    clear:right;
 }
 
 
