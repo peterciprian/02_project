@@ -13,41 +13,70 @@ h5 {
 /*Máté része*/
 .header{
     background: linear-gradient(to top right, #21728f, #032c3b );
-    color: #f5f5f5;
     width: auto;
-    height: 20%;
     overflow: auto;
-    text-align: center;
 }
-headlinks{
+nav{
     float: right;
+    margin-right: 10%;
 }
-h5{
+    
+
+a,
+a:hover,
+a:active,
+a:visited {
     padding-top: 5px;
     text-align: right;
+    color: white;
+    text-decoration: none;
 }
 li {
     display: inline;
+    padding-right: 30px
+}
+.nemnav{
+    display: block;
+    margin: auto;
+    width: 100%;
+   
 }
 .phonescr{
-    display: block;
+    height: 10%;
+    width: 10%;
     float: left;
-    block-size: 200px;
 }
-.text{
+.mellek{
+    display: inline;
+    overflow: auto;
+    
+}
+.text1{
     float: left;
     width: 200px;
     height: 300px;
     text-align: center;
 }
 
-
+.header .gombok {
+    clear: both;
+}
 .header .dbutton {
     background: rgb(7, 152, 189);
     padding: 10px;
     border-radius: 30px;
     color: white;
     font-size: 22px;
+}
+
+
+.text2{
+    width: 200px;
+    float: left;
+}
+
+.break{
+    clear: both;
 }
 
 
