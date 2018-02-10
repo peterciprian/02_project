@@ -8,11 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
     <link rel="stylesheet" href="css/contact.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700%7CNunito" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <!-- kicserelendo egyseges header-re -->
         <a href="index.html"></a>
         <a href="contact.html"></a>
         <a href="coming-soon.html"></a>
@@ -24,7 +25,7 @@
 
                 <div class="app-picture sub-container">
                     <img id="iphone-pic" src="img/iPhone-blank.png" alt="iphone-x">
-                    <img id="phonescreen2" src="img/phonescreen2.png" alt="screenshot">
+                    <img id="phonescreen2" src="img/phonescreen2.png" alt="screenshot2">
                     <img id="phonescreen" src="img/phonescreen.png" alt="screenshot">
 
                 </div>
@@ -46,7 +47,7 @@
             <h3 id="contact">Contact</h3>
             <div class="form-area sub-container">
 
-                <form action="">
+                <form action="-">
                     <label for="user-name">Name</label>
                     <p class="input-par">
                         <input type="text" name="user-name" id="user-name">
@@ -69,16 +70,21 @@
                 </form>
             </div>
             <div class="alt-contact-area sub-container">
-                <h3>Have some questions? Send message here or call us. We are here to help you.</h3>
+                <h3>Have some questions? Send message here or call us.
+                    <br> We are here to help you.</h3>
                 <p class="description">Lorem ipsum dolor, adipisicing elit. Eos magnam officia quis excepturi quia omnis. Ducimus ullam reiciendis
                     corrupti cupiditate?</p>
                 <p class="description">Porro libero minima nulla quam, non in dolorem laborum, quis ad provid. Nostrum quam distinctio eum!
                 </p>
-                <p>
-                    <span>Phone: </span>123 456 789</p>
+                <p class="phonemail">
+                    <span>Phone: </span>
+                    <a href="tel:123456789+"> 123 456 789</a>
+                </p>
                 <!-- tel link here -->
-                <p>
-                    <span>Email: </span>office@example.com</p>
+                <p class="phonemail">
+                    <span>email: </span>
+                    <a href="mailto:office@example.com"> office@example.com</a>
+                </p>
                 <!-- mailto link here -->
             </div>
         </div>

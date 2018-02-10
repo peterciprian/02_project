@@ -113,7 +113,7 @@ body {
 
 .lower {
     margin: 100px auto;
-    width: 1000px;
+    width: 870px;
     height: 600px;
     font-family: 'Nunito', sans-serif;
 }
@@ -123,38 +123,76 @@ body {
 }
 
 .form-area {
-    width: 650px;
+    width: 605px;
+    vertical-align: top;
 }
 
 .alt-contact-area {
-    width: 275px;
-    vertical-align: 200px;
+    width: 260px;
+    vertical-align: top;
+    line-height: 1.5em;
+}
+
+.alt-contact-area>h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 0 35px 0;
 }
 
 form {
     margin-right: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
 }
 
 form input[type='text'],
 textarea {
     box-sizing: border-box;
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid lightgrey;
+    font-size: 16px;
 }
 
 h3#contact {
-    font-size: 30px;
+    font-size: 32px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 30px;
 }
 
 [type='submit'] {
     background: #21728F;
     border: none;
-    padding: 10px 28px;
+    padding: 8px 24px;
     border-radius: 30px;
     color: rgba(255, 255, 255, 0.808);
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+[type='submit']:hover {
+    background: #023051;
 }
 
 p>span {
     font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.lower a,
+.lower p.description {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.lower a:hover {
+    font-weight: bold;
+}
+
+p.phonemail {
+    margin: 2px 0;
+}
+
+p.input-par {
+    margin: 12px 0 20px 0;
 }
