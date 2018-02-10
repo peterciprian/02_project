@@ -74,7 +74,11 @@ body {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+}
+
+.app-intro>a:hover {
+    font-weight: 700;
 }
 
 .app-intro h1 {
@@ -98,6 +102,11 @@ body {
     border-radius: 30px;
     color: rgb(7, 152, 189);
     font-size: 20px;
+    transition: .3s;
+}
+
+.download-button:hover {
+    background: #023051;
 }
 
 /* ------ LOWER PART ---------------------------------- */
