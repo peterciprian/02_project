@@ -16,19 +16,32 @@ h5 {
 /*többi contact.css-ből linkelve*/
 
 .nndowner {
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 80px auto auto auto;
+    position: relative;
+}
+
+.textframe {
+    position: relative;
+    margin: 0 auto 80px auto;
+    width: 1000px;
 }
 
 .text2 {
-    margin: 50px;
-    width: 200px;
-    float: left;
+    margin: auto;
+    width: 285px;
+    display: inline-block;
 }
 
 .text3 {
     padding-left: 30px;
+    padding-right: 10px;
     display: inline-block;
+}
+
+.mate-h3 {
+    margin-left: 10px;
+    margin-bottom: 0;
 }
 
 .text1,
