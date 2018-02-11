@@ -5,8 +5,30 @@ body {
 
 /* ------- UPPER PART -------------------------------------------- */
 
-.upper {
+div#topbackground {
     background: linear-gradient(to top right, #4BCDE3, #023051);
+}
+
+nav {
+    float: right;
+    width: auto;
+    padding-right: 10%;
+}
+
+li {
+    display: inline;
+    padding-right: 30px;
+}
+
+li>a {
+    color: rgba(255, 255, 255, 0.829);
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.upper {
+    clear: both;
     height: 515px;
     margin: 0 auto;
     overflow: hidden;
@@ -196,4 +218,31 @@ p.phonemail {
 
 p.input-par {
     margin: 12px 0 20px 0;
+}
+
+/* -------- FOOTER ----------------- */
+
+footer {
+    padding-top: 5px;
+    height: 50px;
+}
+
+.footerClass {
+    padding: 10px 5%;
+    color: grey;
+}
+
+.footerClass img {
+    float: right;
+    margin-left: 1%;
+    width: 3%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.footerClass img:hover {
+    transition: filter .3s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transform: scale(1.3);
 }
