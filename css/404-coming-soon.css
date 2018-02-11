@@ -1,0 +1,41 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html.soon {
+    background-image: url(ferenciek.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fejlec {
+    font-size: 60px;
+}
+
+.szoveg {
+    font-size: 18px;
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 30px;
+    margin: auto;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 30px;
+    margin: auto;
+    color: black;
+}
