@@ -10,6 +10,7 @@ h4,
 h5 {
   font-family: "Josefin Sans", sans-serif;
 }
+<<<<<<< HEAD
 /*Máté része*/
 .header {
   background: linear-gradient(to top right, #4BCCE2, #012F50);
@@ -33,6 +34,40 @@ a:visited {
 li {
   display: inline;
   padding-right: 30px;
+=======
+
+/*Zsiga része*/
+
+.img {
+    display: inline-block;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.kep1 {
+    width: 200px;
+    height: 400px;
+}
+
+.szoveg2 {
+    vertical-align: 100px;
+    display: inline-block;
+    width: 300px;
+    margin-left: 200px;
+    padding-top: 10%;
+    text-align: justify;
+}
+
+.RR {
+    margin-top: 100px;
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 17em;
+    opacity: 0.9;
+    text-align: center;
+    background-image: url("/img/kékfák.png");
+>>>>>>> 49933a37f0ffbf807e505874b72fda6aa740ca4d
 }
 #focim{
 font-size: 20px;    
@@ -51,6 +86,7 @@ text-align: left;
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 .phonescr {
     position: relative;
     height: 15%;
@@ -60,6 +96,62 @@ text-align: left;
     padding-left: 30%;
     
   }
+=======
+.mp1v2 {
+    background: #f5f5f5;
+    height: 300px;
+    padding: 7% 17%;
+}
+
+.paragraphLeft {
+    float: left;
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+
+.paragraphRight {
+    float: right;
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+
+.imgRight {
+    float: right;
+    display: inline-block;
+    width: 250px;
+}
+
+.imgLeft {
+    float: left;
+    display: inline-block;
+    width: 250px;
+}
+
+.imgLeft img {
+    width: 70%;
+    height: 70%;
+    margin-left: 20px;
+    -webkit-box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
+    box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
+}
+
+.imgRight img {
+    width: 70%;
+    height: 70%;
+    margin-left: 20px;
+    -webkit-box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
+    box-shadow: -6px 3px 22px -1px rgba(0, 0, 0, 0.71);
+}
+
+.mid {
+    text-align: center;
+    padding: 3% 25%;
+}
+>>>>>>> 49933a37f0ffbf807e505874b72fda6aa740ca4d
 
   .mellek {
     float: left;
@@ -85,9 +177,16 @@ text-align: left;
   font-size: 15px;
 }
 
+<<<<<<< HEAD
 .nndowner {
   width: 60%;
   margin: 0 auto;
+=======
+.mp3 {
+    color: black;
+    text-align: center;
+    padding: 5% 0 7%;
+>>>>>>> 49933a37f0ffbf807e505874b72fda6aa740ca4d
 }
 .text2 {
   margin: 50px;

@@ -21,32 +21,34 @@
     <!-- Zsiga része -->
 
 
-    <div class="EAA">
-        <div class="szoveg1">
+    <div class="mp1v2">
+        <div class="paragraphLeft">
             <h2>Enhance Almost Anything</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem numquam ipsa dignissimos eius voluptate ex deleniti iure
-                praesentium non ipsam consequuntur,
+                praesentium non ipsam consequuntur,Lorem ipsum dolor sit amet consectetur adipisicing elit. maiores distinctio
+                eligendi adipisci quasi necessitatibus vitae, veritatis sed tempore voluptas rerum
             </p>
         </div>
-        <div class="img">
-            <img src="/img/phonescreen2.png" alt="telefon" class="kep1">
+        <div class="imgRight">
+            <img src="/img/phonescreen2.png" alt="telefon">
         </div>
     </div>
 
 
 
-    <div class="PYP">
-        <div class="img">
-            <img src="/img/phonescreen.png" alt="stats" class="kep2">
+    <div class="mp1">
+        <div class="imgLeft">
+            <img src="/img/phonescreen.png" alt="stats">
         </div>
-        <div class="szoveg2">
+        <div class="paragraphRight">
             <h2>Post Your Photos and Get
                 <br> Detailed Stats </h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. maiores distinctio eligendi adipisci quasi necessitatibus vitae,
-                verűitatis sed tempore voluptas rerum natus delectus. amet consectetur adipisicing elit. Quibusdam sed fugiat
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                veritatis sed tempore voluptas rerum natus delectus. amet consectetur adipisicing elit. Quibusdam sed fugiat
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. maiores distinctio eligendi adipisci quasi necessitatibus vitae, veritatis sed tempore voluptas rerum.
             </p>
         </div>
     </div>
@@ -61,6 +63,7 @@
 
         </div>
     </div>
+
     <!-- Miro része -->
 
     <div class="mp">
@@ -102,32 +105,127 @@
     </div>
 
 
-    <footer>
+    <footer class="lab">
         <hr>
         <div class="footerClass">
-            <label for="">Copyright © 2018</label>
+            <label>Copyright © 2018</label>
 
 
             <a href="https://vimeo.com/">
-                <img src="/img/Vimeo.png">
+                <img src="/img/Vimeo.png" alt="vimeo" class="elso">
             </a>
             <a href="https://coincash.eu/arfolyamok/">
-                <img src="/img/btc.png" alt="Btc">
+                <img src="/img/btc.png" alt="Btc" class="masodik">
             </a>
             <a href="https://www.youtube.com/">
-                <img src="/img/youtube.png" alt="Youtube">
+                <img src="/img/youtube.png" alt="Youtube" class="harmadik">
             </a>
             <a href="https://www.facebook.com/">
-                <img src="/img/Facebook.png" alt="Facebook">
+                <img src="/img/Facebook.png" alt="Facebook" class="negyedik">
             </a>
             <a href="https://twitter.com/">
-                <img src="/img/twt.png" alt="Twitter">
+                <img src="/img/twt.png" alt="Twitter" class="otodik">
 
             </a>
 
         </div>
 
     </footer>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.paragraphLeft', {
+            duration: 2000,
+            delay: 0,
+            origin: 'left',
+            distance: '300px'
+        })
+        sr.reveal('.imgRight', {
+            duration: 2000,
+            delay: 0,
+            origin: 'top',
+            distance: '300px'
+        })
+        sr.reveal('.paragraphRight', {
+            duration: 2000,
+            delay: 0,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.imgLeft', {
+            duration: 2000,
+            delay: 0,
+            origin: 'bottom',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.RR', {
+            duration: 2000,
+            delay: 0,
+            origin: 'left',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.mp', {
+            duration: 2000,
+            delay: 0,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.mp2', {
+            duration: 2000,
+            delay: 0,
+            origin: 'left',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.mp3', {
+            duration: 2000,
+            delay: 0,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.otodik', {
+            duration: 2000,
+            delay: 0,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.negyedik', {
+            duration: 2000,
+            delay: 200,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.harmadik', {
+            duration: 2000,
+            delay: 400,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.masodik', {
+            duration: 2000,
+            delay: 1200,
+            origin: 'bottom',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.elso', {
+            duration: 2000,
+            delay: 600,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.8
+        })
+    </script>
+
+
 </body>
 
 
