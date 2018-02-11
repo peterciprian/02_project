@@ -11,15 +11,15 @@ h4 {
 
 /*Zsiga része*/
 
-img {
-    height: 50%;
-    width: 50%;
+.img {
+    display: inline-block;
+    width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .EAA {
-    align-self: center;
-    display: inline-block;
+    /* align-self: center;
+    display: inline-block;*/
     height: 60%;
     width: 50%;
     margin: auto;
@@ -27,23 +27,26 @@ img {
 }
 
 .szoveg1 {
-    width: 50%;
+    /*width: 50%;
     margin: auto;
-    float: left;
+    float: left;*/
+    width: 300px;
+    display: inline-block;
     text-align: justify;
     padding-top: 15%;
 }
 
 .kep1 {
-    text-align: end;
+    /*display: inline-block;
+    text-align: end;*/
     width: 300px;
     height: 500px;
-    margin: auto;
-    float: right;
+    /*margin: auto;
+    float: right;*/
 }
 
 .PYP {
-    display: inline-block;
+    /*display: inline-block;*/
     height: 60%;
     width: 50%;
     margin: auto;
@@ -51,19 +54,21 @@ img {
 }
 
 .szoveg2 {
-    width: 50%;
-    margin: auto;
-    float: right;
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    /*margin: auto;
+    float: right;*/
     padding-top: 10%;
     text-align: justify;
 }
 
 .kep2 {
-    text-align: start;
+    /*text-align: start;*/
     width: 300px;
     height: 500px;
-    margin: auto;
-    float: left;
+    /*margin: auto;
+    float: left;*/
 }
 
 .RR {
@@ -71,6 +76,7 @@ img {
     width: 100%;
     height: 20em;
     background-color: blue;
+    opacity: 0.7;
     text-align: center;
     background-image: url("/img/kékfák.png");
 }
