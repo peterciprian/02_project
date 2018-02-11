@@ -54,8 +54,8 @@
                         consectetur.
                     </p>
                     <p>
-                        <a class="download-button ios" href="https://www.apple.com/hu/ios/app-store/">Download for iOS</a>
-                        <a class="download-button android" href="https://play.google.com/store">Download for Android</a>
+                        <a class="download-button ios" href="https://www.apple.com/hu/ios/app-store/" id="gomb1">Download for iOS</a>
+                        <a class="download-button android" href="https://play.google.com/store" id="gomb2">Download for Android</a>
                     </p>
                 </div>
             </div>
@@ -65,7 +65,7 @@
 
         <div class="nndowner">
             <div class="textframe">
-                <div class="text2">
+                <div class="text2 ani1">
                     <h3 class="mate-h3">
                         <i class="fab fa-autoprefixer" style="color: #257492"></i> Well designed</h3>
                     <p class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur feugiat ligula vitae luctus.
@@ -73,14 +73,14 @@
                     </p>
 
                 </div>
-                <div class="text2">
+                <div class="text2 ani2">
                     <h3 class="mate-h3">
                         <i class="fas fa-pencil-alt" style="color: #257492"></i> Easy customization</h3>
                     <p class="text3">Pellentesque interdum velit lacus, id consequat dolor efficitur sit amet. Donec ut congue eros, quis
                         interdum odio. Cras placerat, libero dignissim accumsan fermentum.
                     </p>
                 </div>
-                <div class="text2">
+                <div class="text2 ani3">
 
                     <h3 class="mate-h3">
                         <i class="fas fa-code" style="color: #257492"></i> Clean code</h3>
@@ -178,126 +178,151 @@
 
         </div>
 
+    </main>
+    <footer class="lab">
+        <hr>
+        <div class="footerClass">
+            <label>Copyright © 2018</label>
 
-        <footer class="lab">
-            <hr>
-            <div class="footerClass">
-                <label>Copyright © 2018</label>
+
+            <a href="https://vimeo.com/">
+                <img src="/img/Vimeo.png" alt="vimeo" class="elso">
+            </a>
+            <a href="https://coincash.eu/arfolyamok/">
+                <img src="/img/btc.png" alt="Btc" class="masodik">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="/img/youtube.png" alt="Youtube" class="harmadik">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="/img/Facebook.png" alt="Facebook" class="negyedik">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="/img/twt.png" alt="Twitter" class="otodik">
+
+            </a>
+
+        </div>
+
+    </footer>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
 
 
-                <a href="https://vimeo.com/">
-                    <img src="/img/Vimeo.png" alt="vimeo" class="elso">
-                </a>
-                <a href="https://coincash.eu/arfolyamok/">
-                    <img src="/img/btc.png" alt="Btc" class="masodik">
-                </a>
-                <a href="https://www.youtube.com/">
-                    <img src="/img/youtube.png" alt="Youtube" class="harmadik">
-                </a>
-                <a href="https://www.facebook.com/">
-                    <img src="/img/Facebook.png" alt="Facebook" class="negyedik">
-                </a>
-                <a href="https://twitter.com/">
-                    <img src="/img/twt.png" alt="Twitter" class="otodik">
+        sr.reveal('.upper', {
+            duration: 2000,
+            delay: 0
 
-                </a>
-
-            </div>
-
-        </footer>
-        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-        <script>
-            window.sr = ScrollReveal();
-            sr.reveal('.paragraphLeft', {
-                duration: 2000,
-                delay: 0,
-                origin: 'left',
-                distance: '300px'
-            })
-            sr.reveal('.imgRight', {
-                duration: 2000,
-                delay: 0,
-                origin: 'top',
-                distance: '300px'
-            })
-            sr.reveal('.paragraphRight', {
-                duration: 2000,
-                delay: 0,
-                origin: 'right',
-                distance: '300px',
-                viewFactor: 0.2
-            })
-            sr.reveal('.imgLeft', {
-                duration: 2000,
-                delay: 0,
-                origin: 'bottom',
-                distance: '300px',
-                viewFactor: 0.2
-            })
-            sr.reveal('.RR', {
-                duration: 2000,
-                delay: 0,
-                origin: 'left',
-                distance: '300px',
-                viewFactor: 0.2
-            })
-            sr.reveal('.mp', {
-                duration: 2000,
-                delay: 0,
-                origin: 'right',
-                distance: '300px',
-                viewFactor: 0.2
-            })
-            sr.reveal('.mp2', {
-                duration: 2000,
-                delay: 0,
-                origin: 'left',
-                distance: '300px',
-                viewFactor: 0.2
-            })
-            sr.reveal('.mp3', {
-                duration: 2000,
-                delay: 0,
-                origin: 'right',
-                distance: '300px',
-                viewFactor: 0.2
-            })
-            sr.reveal('.otodik', {
-                duration: 2000,
-                delay: 0,
-                origin: 'right',
-                distance: '300px',
-                viewFactor: 0.2
-            })
-            sr.reveal('.negyedik', {
-                duration: 2000,
-                delay: 200,
-                origin: 'right',
-                distance: '300px',
-                viewFactor: 0.2
-            })
-            sr.reveal('.harmadik', {
-                duration: 2000,
-                delay: 400,
-                origin: 'right',
-                distance: '300px',
-                viewFactor: 0.2
-            })
-            sr.reveal('.masodik', {
-                duration: 2000,
-                delay: 1200,
-                origin: 'bottom',
-                distance: '300px',
-                viewFactor: 0.2
-            })
-            sr.reveal('.elso', {
-                duration: 2000,
-                delay: 600,
-                origin: 'right',
-                distance: '300px',
-                viewFactor: 0.8
-            })
-        </script>
+        })
+        sr.reveal('.ani1', {
+            duration: 2000,
+            delay: 0,
+            origin: 'left',
+            distance: '300px'
+        })
+        sr.reveal('.ani2', {
+            duration: 2000,
+            delay: 0,
+            origin: 'bottom',
+            distance: '300px'
+        })
+        sr.reveal('.ani3', {
+            duration: 2000,
+            delay: 0,
+            origin: 'right',
+            distance: '300px'
+        })
+        sr.reveal('.paragraphLeft', {
+            duration: 2000,
+            delay: 0,
+            origin: 'left',
+            distance: '300px'
+        })
+        sr.reveal('.imgRight', {
+            duration: 2000,
+            delay: 0,
+            origin: 'top',
+            distance: '300px'
+        })
+        sr.reveal('.paragraphRight', {
+            duration: 2000,
+            delay: 0,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.imgLeft', {
+            duration: 2000,
+            delay: 0,
+            origin: 'bottom',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.RR', {
+            duration: 2000,
+            delay: 0,
+            origin: 'left',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.mp', {
+            duration: 2000,
+            delay: 0,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.mp2', {
+            duration: 2000,
+            delay: 0,
+            origin: 'left',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.mp3', {
+            duration: 2000,
+            delay: 0,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.otodik', {
+            duration: 2000,
+            delay: 0,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.negyedik', {
+            duration: 2000,
+            delay: 200,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.harmadik', {
+            duration: 2000,
+            delay: 400,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.masodik', {
+            duration: 2000,
+            delay: 600,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+        sr.reveal('.elso', {
+            duration: 2000,
+            delay: 800,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        })
+    </script>
 
 
 </body>
