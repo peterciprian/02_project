@@ -74,14 +74,14 @@ h4 {
     float: left;
     display: inline-block;
     width: 40%;
-    height: 100;
+    height: 100%;
 }
 
 .paragraphRight {
     float: right;
     display: inline-block;
     width: 40%;
-    height: 100;
+    height: 100%;
 }
 
 .imgRight {
@@ -157,7 +157,7 @@ h4 {
 .mp3 {
     color: black;
     text-align: center;
-    padding: 7% 0 12%;
+    padding: 5% 0 7%;
 }
 
 .customInput3 {
