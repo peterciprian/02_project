@@ -8,104 +8,38 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Josefin Sans", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
-
 /*Máté része*/
-.header {
-    background: linear-gradient(to top right, #4bcce2, #012f50);
-    height: 500px;
-  }
-  nav {
-    float: right;
-    width: auto;
-    padding-right: 10%;
-  }
-  
-  a,
-  a:hover,
-  a:active,
-  a:visited {
-    padding-top: 5px;
-    text-align: right;
-    color: white;
-    text-decoration: none;
-  }
-  li {
-    display: inline;
-    padding-right: 30px;
-  }
-  
-#focim {
-    font-size: 20px;
-    text-align: left;
-  }
-  
-  #alcim {
-    font-size: 40px;
-    text-align: left;
-  }
-  
-  .nemnav {
-    display: block;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .phonescr {
-    position: relative;
-    height: 14%;
-    width: 14%;
-    float: left;
-    margin-right: 100px;
-    padding-left: 30%;
-  }
-.mellek {
-    float: left;
-    margin: auto;
-  }
-  .mellek .text1 {
-    text-align: justify;
-    color: white;
-    height: 300px;
-    width: 400px;
-  }
-  
-  .mellek .gombok {
-    margin-top: 50px;
-    margin-left: 50px;
-  }
-  
-  .mellek .gombok .dbutton {
-    background: white;
-    padding: 10px;
-    border-radius: 15px;
-    color: rgb(7, 152, 189);
-    font-size: 15px;
-  }
-  
-  .nndowner {
+
+/*többi contact.css-ből linkelve*/
+
+.nndowner {
     width: 60%;
     margin: 0 auto;
-  }
+}
+
 .text2 {
     margin: 50px;
     width: 200px;
     float: left;
-  }
-  .text3 {
+}
+
+.text3 {
     padding-left: 30px;
-  }
-  .text1,
-  .text2 {
+    display: inline-block;
+}
+
+.text1,
+.text2 {
     font-size: small;
-  }
-  
-  .break {
+}
+
+.break {
     clear: both;
-  }
+}
+
 /*Zsiga része*/
 
 .img {
