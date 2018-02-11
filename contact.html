@@ -12,85 +12,122 @@
 </head>
 
 <body>
-    <header>
-        <!-- kicserelendo egyseges header-re -->
-        <a href="index.html"></a>
-        <a href="contact.html"></a>
-        <a href="coming-soon.html"></a>
-        <a href="404.html"></a>
-    </header>
-    <main>
-        <div class="upper main-container">
-            <div class="upper-sub">
+    <div id="topbackground">
+        <header>
+            <div class="header">
+                <nav>
+                    <h5>
+                        <ul>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="coming-soon.html">Coming soon!</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                        </ul>
+                    </h5>
+                </nav>
+        </header>
+        <main>
+            <div class="upper main-container">
+                <div class="upper-sub">
 
-                <div class="app-picture sub-container">
-                    <img id="iphone-pic" src="img/iPhone-blank.png" alt="iphone-x">
-                    <img id="phonescreen2" src="img/phonescreen2.png" alt="screenshot2">
-                    <img id="phonescreen" src="img/phonescreen.png" alt="screenshot">
+                    <div class="app-picture sub-container">
+                        <img id="iphone-pic" src="img/iPhone-blank.png" alt="iphone-x">
+                        <img id="phonescreen2" src="img/phonescreen2.png" alt="screenshot2">
+                        <img id="phonescreen" src="img/phonescreen.png" alt="screenshot">
 
+                    </div>
+                    <div class="app-intro sub-container">
+                        <a href="index.html">Application</a>
+                        <h1 id="sub-title">Edit Your Photos and Share with Community</h1>
+                        <p class="description white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum autem maxime esse maiores nesciunt exercitationem
+                            iusto sint totam quae ut, aliquid error consequatur optio, qui rerum. Tenetur anti excepturi
+                            tempore consectetur.
+                        </p>
+                        <p>
+                            <a class="download-button ios" href="https://www.apple.com/hu/ios/app-store/">Download for iOS</a>
+                            <a class="download-button android" href="https://play.google.com/store">Download for Android</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="app-intro sub-container">
-                    <a href="index.html">Application</a>
-                    <h1 id="sub-title">Edit Your Photos and Share with Community</h1>
-                    <p class="description white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum autem maxime esse maiores nesciunt exercitationem
-                        iusto sint totam quae ut, aliquid error consequatur optio, qui rerum. Tenetur anti excepturi tempore
-                        consectetur.
+            </div>
+            </div>
+            <div class="lower main-container">
+                <h3 id="contact">Contact</h3>
+                <div class="form-area sub-container">
+
+                    <form action="-">
+                        <label for="user-name">Name</label>
+                        <p class="input-par">
+                            <input type="text" name="user-name" id="user-name">
+                        </p>
+                        <label for="subject">Subject</label>
+                        <p class="input-par">
+                            <input type="text" name="subject" id="subject">
+                        </p>
+                        <label for="user-email">Your email</label>
+                        <p class="input-par">
+                            <input type="text" name="user-email" id="user-email">
+                        </p>
+                        <label for="user-message">Message</label>
+                        <p class="input-par">
+                            <textarea name="user-message" id="user-message" cols="50" rows="10"></textarea>
+                        </p>
+                        <p class="submit-par">
+                            <input type="submit" value="Send" id="message-submit-button">
+                        </p>
+                    </form>
+                </div>
+                <div class="alt-contact-area sub-container">
+                    <h3>Have some questions? Send message here or call us.
+                        <br> We are here to help you.</h3>
+                    <p class="description">Lorem ipsum dolor, adipisicing elit. Eos magnam officia quis excepturi quia omnis. Ducimus ullam reiciendis
+                        corrupti cupiditate?</p>
+                    <p class="description">Porro libero minima nulla quam, non in dolorem laborum, quis ad provid. Nostrum quam distinctio eum!
                     </p>
-                    <p>
-                        <a class="download-button ios" href="https://www.apple.com/hu/ios/app-store/">Download for iOS</a>
-                        <a class="download-button android" href="https://play.google.com/store">Download for Android</a>
+                    <p class="phonemail">
+                        <span>Phone: </span>
+                        <a href="tel:+123456789"> 123 456 789</a>
                     </p>
+                    <!-- tel link here -->
+                    <p class="phonemail">
+                        <span>email: </span>
+                        <a href="mailto:office@example.com"> office@example.com</a>
+                    </p>
+                    <!-- mailto link here -->
                 </div>
             </div>
-        </div>
-        <div class="lower main-container">
-            <h3 id="contact">Contact</h3>
-            <div class="form-area sub-container">
 
-                <form action="-">
-                    <label for="user-name">Name</label>
-                    <p class="input-par">
-                        <input type="text" name="user-name" id="user-name">
-                    </p>
-                    <label for="subject">Subject</label>
-                    <p class="input-par">
-                        <input type="text" name="subject" id="subject">
-                    </p>
-                    <label for="user-email">Your email</label>
-                    <p class="input-par">
-                        <input type="text" name="user-email" id="user-email">
-                    </p>
-                    <label for="user-message">Message</label>
-                    <p class="input-par">
-                        <textarea name="user-message" id="user-message" cols="50" rows="10"></textarea>
-                    </p>
-                    <p class="submit-par">
-                        <input type="submit" value="Send" id="message-submit-button">
-                    </p>
-                </form>
-            </div>
-            <div class="alt-contact-area sub-container">
-                <h3>Have some questions? Send message here or call us.
-                    <br> We are here to help you.</h3>
-                <p class="description">Lorem ipsum dolor, adipisicing elit. Eos magnam officia quis excepturi quia omnis. Ducimus ullam reiciendis
-                    corrupti cupiditate?</p>
-                <p class="description">Porro libero minima nulla quam, non in dolorem laborum, quis ad provid. Nostrum quam distinctio eum!
-                </p>
-                <p class="phonemail">
-                    <span>Phone: </span>
-                    <a href="tel:+123456789"> 123 456 789</a>
-                </p>
-                <!-- tel link here -->
-                <p class="phonemail">
-                    <span>email: </span>
-                    <a href="mailto:office@example.com"> office@example.com</a>
-                </p>
-                <!-- mailto link here -->
-            </div>
-        </div>
+        </main>
+        <footer>
+            <hr>
+            <div class="footerClass">
+                <label for="">Copyright © 2018</label>
 
-    </main>
-    <footer></footer>
+
+                <a href="https://vimeo.com/">
+                    <img src="/img/Vimeo.png">
+                </a>
+                <a href="https://coincash.eu/arfolyamok/">
+                    <img src="/img/btc.png" alt="Btc">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="/img/youtube.png" alt="Youtube">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="/img/Facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="/img/twt.png" alt="Twitter">
+
+                </a>
+
+            </div>
+        </footer>
 </body>
 
 </html>
