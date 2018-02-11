@@ -8,42 +8,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
     <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700%7CNunito" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a href="index.html"></a>
-        <a href="contact.html"></a>
-        <a href="coming-soon.html"></a>
-        <a href="404.html"></a>
-    </header>
-    <main>
+    <div id="topbackground">
+        <header>
+
+            <nav>
+
+                <ul>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="coming-soon.html">Coming soon!</a>
+                    </li>
+                    <li>
+                        <a href="404.html">404</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+
         <div class="upper main-container">
             <div class="upper-sub">
 
                 <div class="app-picture sub-container">
                     <img id="iphone-pic" src="img/iPhone-blank.png" alt="iphone-x">
-                    <img id="phonescreen2" src="img/phonescreen2.png" alt="screenshot">
+                    <img id="phonescreen2" src="img/phonescreen2.png" alt="screenshot2">
                     <img id="phonescreen" src="img/phonescreen.png" alt="screenshot">
 
                 </div>
                 <div class="app-intro sub-container">
-                    <h1 id="application">Application</h1>
-                    <h2 id="sub-title">Edit Your Photos and Share with the Community</h2>
+                    <a href="index.html">Application</a>
+                    <h1 id="sub-title">Edit Your Photos and Share with Community</h1>
                     <p class="description white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum autem maxime esse maiores nesciunt exercitationem
-                        iusto sint totam quae ut, aliquid error consequatur optio, qui rerum. Tenetur excepturi tempore consectetur.</p>
+                        iusto sint totam quae ut, aliquid error consequatur optio, qui rerum. Tenetur anti excepturi tempore
+                        consectetur.
+                    </p>
                     <p>
                         <a class="download-button ios" href="https://www.apple.com/hu/ios/app-store/">Download for iOS</a>
-                        <a class="download-button android" href="https://play.google.com/store">Download for android</a>
+                        <a class="download-button android" href="https://play.google.com/store">Download for Android</a>
                     </p>
                 </div>
             </div>
         </div>
+    </div>
+    <main>
         <div class="lower main-container">
             <h3 id="contact">Contact</h3>
             <div class="form-area sub-container">
 
-                <form action="">
+                <form action="-">
                     <label for="user-name">Name</label>
                     <p class="input-par">
                         <input type="text" name="user-name" id="user-name">
@@ -66,22 +85,52 @@
                 </form>
             </div>
             <div class="alt-contact-area sub-container">
-                <h3>Have some questions? Send message here or call us. We are here to help you.</h3>
+                <h3>Have some questions? Send message here or call us.
+                    <br> We are here to help you.</h3>
                 <p class="description">Lorem ipsum dolor, adipisicing elit. Eos magnam officia quis excepturi quia omnis. Ducimus ullam reiciendis
-                    corrupti cupiditate?</p>
+                    corrupti cupiditate?
+                </p>
                 <p class="description">Porro libero minima nulla quam, non in dolorem laborum, quis ad provid. Nostrum quam distinctio eum!
                 </p>
-                <p>
-                    <span>Phone: </span>123 456 789</p>
+                <p class="phonemail">
+                    <span>Phone: </span>
+                    <a href="tel:+123456789"> 123 456 789</a>
+                </p>
                 <!-- tel link here -->
-                <p>
-                    <span>Email: </span>office@example.com</p>
+                <p class="phonemail">
+                    <span>email: </span>
+                    <a href="mailto:office@example.com"> office@example.com</a>
+                </p>
                 <!-- mailto link here -->
             </div>
         </div>
 
     </main>
-    <footer></footer>
+    <footer>
+        <hr>
+        <div class="footerClass">
+            <label>Copyright © 2018</label>
+
+
+            <a href="https://vimeo.com/">
+                <img src="/img/Vimeo.png" alt="Vimeo">
+            </a>
+            <a href="https://coincash.eu/arfolyamok/">
+                <img src="/img/btc.png" alt="Btc">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="/img/youtube.png" alt="Youtube">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="/img/Facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="/img/twt.png" alt="Twitter">
+
+            </a>
+
+        </div>
+    </footer>
 </body>
 
 </html>
