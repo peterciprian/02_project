@@ -1,38 +1,21 @@
+/* future CSS for contact.html */
+
+/*will there be 1 mutual css or separate ones?
+...just wondering   */
+
 body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* ------- UPPER PART -------------------------------------------- */
 
-div#topbackground {
-    background: linear-gradient(to top right, #4BCDE3, #023051);
-}
-
-nav {
-    float: right;
-    width: auto;
-    padding-right: 10%;
-}
-
-li {
-    display: inline;
-    padding-right: 30px;
-}
-
-li>a {
-    color: rgba(255, 255, 255, 0.829);
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-}
-
 .upper {
-    clear: both;
+    padding: 6px;
     height: 515px;
+    background: linear-gradient(to top right, #4BCDE3, #023051);
     margin: 0 auto;
     overflow: hidden;
-    padding: 6px;
 }
 
 .upper-sub>div {
@@ -40,33 +23,31 @@ li>a {
 }
 
 .upper-sub {
-    height: 520px;
+    width: 1000px;
     margin: auto;
-    width: 880px;
+    height: 500px;
 }
 
 .app-picture {
-    height: 518px;
-    margin: 5px;
     position: relative;
-    width: 290px;
+    margin: 5px;
+    width: 300px;
 }
 
 #iphone-pic {
+    width: 300px;
     border-radius: 47px 47px 0 0;
-    height: unset;
     margin: 5px;
-    width: 280px;
 }
 
 #phonescreen {
+    width: 273px;
     height: 479px;
+    position: absolute;
+    top: 37px;
     left: 19px;
     opacity: 1;
-    position: absolute;
-    top: 36px;
     transition: opacity 2s;
-    width: 254px;
 }
 
 #phonescreen:hover {
@@ -74,70 +55,55 @@ li>a {
 }
 
 #phonescreen2 {
+    width: 273px;
     height: 479px;
-    left: 19px;
     position: absolute;
     top: 37px;
-    width: 254px;
+    left: 19px;
 }
 
 .app-intro {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 500px;
+    margin: 0 0 0 150px;
     color: white;
-    font-family: inherit;
-    margin: 12px 0 0 90px;
-    vertical-align: top;
-    width: 480px;
-}
-
-.app-intro>a {
-    color: inherit;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    margin: 0;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.app-intro>a:hover {
-    font-weight: 700;
+    vertical-align: 140px;
 }
 
 .app-intro h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 56px;
-    line-height: 1.05em;
-    margin: 12px 0 40px 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
+
+.app-intro h2 {
+    font-size: 60px;
+    margin: 0 0 40px 0;
 }
 
 .description.white-text {
-    color: rgba(255, 255, 255, 0.6);
-    font-family: 'Nunito', sans-serif;
-    font-size: 17px;
     margin-bottom: 40px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .download-button {
+    text-decoration: none;
     background: white;
+    padding: 10px;
     border-radius: 30px;
     color: rgb(7, 152, 189);
-    font-size: 20px;
-    padding: 8px 18px;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.download-button:hover {
-    background: #023051;
+    font-size: 22px;
 }
 
 /* ------ LOWER PART ---------------------------------- */
 
 .lower {
-    font-family: 'Nunito', sans-serif;
-    height: 600px;
     margin: 100px auto;
-    width: 870px;
+    width: 1000px;
+    height: 600px;
+    font-family: inherit;
 }
 
 .lower .sub-container {
@@ -145,104 +111,38 @@ li>a {
 }
 
 .form-area {
-    vertical-align: top;
-    width: 605px;
+    width: 650px;
 }
 
 .alt-contact-area {
-    line-height: 1.5em;
-    vertical-align: top;
-    width: 260px;
-}
-
-.alt-contact-area>h3 {
-    font-family: 'Josefin Sans', sans-serif;
-    margin: 0 0 35px 0;
+    width: 275px;
+    vertical-align: 200px;
 }
 
 form {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
     margin-right: 40px;
 }
 
 form input[type='text'],
 textarea {
-    border: 1px solid lightgrey;
     box-sizing: border-box;
-    font-size: 16px;
-    padding: 8px;
     width: 100%;
+    padding: 10px;
+    border: 1px solid lightgrey;
 }
 
 h3#contact {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 30px;
 }
 
 [type='submit'] {
     background: #21728F;
     border: none;
+    padding: 10px 28px;
     border-radius: 30px;
     color: rgba(255, 255, 255, 0.808);
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    padding: 8px 24px;
-}
-
-[type='submit']:hover {
-    background: #023051;
-    cursor: pointer;
 }
 
 p>span {
-    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-}
-
-.lower a,
-.lower p.description {
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.lower a:hover {
-    font-weight: bold;
-}
-
-p.phonemail {
-    margin: 2px 0;
-}
-
-p.input-par {
-    margin: 12px 0 20px 0;
-}
-
-/* -------- FOOTER ----------------- */
-
-footer {
-    padding-top: 5px;
-    height: 50px;
-}
-
-.footerClass {
-    padding: 10px 5%;
-    color: grey;
-}
-
-.footerClass img {
-    float: right;
-    margin-left: 1%;
-    width: 3%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-.footerClass img:hover {
-    transition: filter .3s ease-in-out;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    -webkit-transform: scale(1.3);
 }
