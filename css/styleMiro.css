@@ -1,0 +1,36 @@
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#table {
+    border-collapse: collapse;
+}
+
+#table td,
+#table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table tr:hover {
+    background-color: #ddd;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #355C7D;
+    color: white;
+}
+
+button {
+    color: white;
+    background-color: #355C7D;
+    padding: 8px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(111, 178, 236);
+}
