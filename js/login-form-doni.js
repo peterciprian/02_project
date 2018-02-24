@@ -61,6 +61,8 @@ function clickCheck() {
                 if (userName == users[i].email && userPassword == users[i].password) {
                     document.querySelector('#error').innerHTML = "";
                     document.querySelector('#success').innerHTML = `Belépve: ${userName}`;
+                    window.location.assign("../index-doni.html");
+
                     break;
                 } else {
                     document.querySelector('#error').innerHTML = errorMessage2;
