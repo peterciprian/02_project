@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login-form-zsiga.css">
+</head>
+
+<body>
+    <div class="login-form">
+        <div>
+            <i class="fas fa-circle fa-8x"></i>
+            <i class="fas fa-camera fa-3x"></i>
+        </div>
+        <form>
+            <div>
+                <input type="text" class="username" name="username" id="username" placeholder="Username">
+                <span>
+                    <i class="fas fa-user"></i>
+                </span>
+            </div>
+
+            <div>
+                <input type="password" class="pass" name="pass" id="pass" placeholder="*********">
+                <span>
+                    <i class="fas fa-lock"></i>
+                </span>
+            </div>
+
+            <div>
+                <span id="error"></span>
+                <span id="success"></span>
+                <input type="button" value="login" onclick="clickCheck()">
+            </div>
+            <div>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember Me</label>
+                <a class="forgot" href="" onclick="forgot()">Forgot Password?</a>
+            </div>
+        </form>
+
+    </div>
+    <p class="copyright">Copyright &copy; 2018 Your Brand Name, Inc</p>
+
+    <script src="js/login-form-zsiga.js"></script>
+</body>
+
+</html>

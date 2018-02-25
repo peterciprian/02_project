@@ -1,0 +1,134 @@
+/*main*/
+
+body {
+    margin: 0 auto;
+    background: radial-gradient(circle, rgb(23, 103, 168), rgb(98, 211, 245), rgb(184, 196, 49))
+}
+
+div {
+    text-align: center;
+    width: 100%;
+}
+
+.login-form {
+    position: relative;
+    margin: 100px auto 10px auto;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    width: 450px;
+    height: 300px;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.username {
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 14px 14px 2em;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.pass {
+    margin-top: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 14px 14px 2em;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.forgot {
+    margin-left: 180px;
+    font-style: oblique;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+    text-align: justify;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.copyright {
+    color: white;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*login.button-remember.checkbox*/
+
+[type='button'] {
+    margin-top: 12px;
+    background: rgba(3, 98, 178, 0.8);
+    color: white;
+    width: 100%;
+    height: 38px;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+[type="checkbox"] {
+    opacity: 0.5;
+    height: 17px;
+    width: 17px;
+    margin-left: 25px;
+    text-align: justify;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: bold;
+}
+
+/*icons*/
+
+i {
+    position: absolute;
+}
+
+i.fa-circle {
+    color: rgba(42, 77, 112, 0.85);
+    left: 185px;
+    top: -70px;
+}
+
+i.fa-camera {
+    color: white;
+    left: 225px;
+    top: -35px;
+}
+
+i.fa-user {
+    left: 27px;
+    top: 95px;
+}
+
+i.fa-lock {
+    left: 27px;
+    top: 160px;
+}
+
+/*error-success*/
+
+#error {
+    position: absolute;
+    top: 285px;
+    left: 25px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+#success {
+    position: absolute;
+    top: 285px;
+    left: 25px;
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
