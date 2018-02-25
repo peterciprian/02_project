@@ -75,7 +75,7 @@ function clickCheck() {
             }
             if (found) {
                 document.querySelector('#success').innerHTML = 'Belépve: ' + getUserNameFieldValue();
-                window.location.assign("/02_project/index-zsiga.html");
+                window.location.assign("../index-zsiga.html");
                 attempt = 0;
             } else {
                 document.querySelector('#error').innerHTML = ERROR_FAULT;
