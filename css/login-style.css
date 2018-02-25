@@ -1,0 +1,81 @@
+html {
+    background-image: url("grad.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    margin: 50px auto;
+    padding: 80px 20px 20px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#username,
+#password,
+#button {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-left: 4%;
+    border: none;
+    height: 40px;
+    margin: 2% 5%;
+    border-radius: 5px;
+    width: 90%;
+}
+
+#error {
+    color: red;
+}
+
+.camera {
+    position: absolute;
+    font-size: 30px;
+    left: 175px;
+    top: -50px;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(74, 83, 92, 0.80);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.also {
+    position: relative;
+    margin: 2px auto;
+}
+
+#button {
+    color: white;
+    text-transform: uppercase;
+    background: #0262AF;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+div a {
+    padding-left: 25%;
+    text-align: right;
+    font-style: italic;
+}
