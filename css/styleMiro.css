@@ -15,8 +15,7 @@ body {
 
 #table tr:hover {
     background-color: #ddd;
-    zoom: 1.05;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #table th {
