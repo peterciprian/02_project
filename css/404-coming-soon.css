@@ -3,7 +3,8 @@ body {
 }
 
 html.soon {
-    background-image: url(ferenciek.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url("ferenciek.jpg");
+    /*background-image: url(ferenciek.jpg);*/
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
