@@ -4,6 +4,7 @@ body {
 
 #table {
     border-collapse: collapse;
+    box-shadow: 10px 10px 30px slategrey;
 }
 
 #table td,
@@ -14,6 +15,8 @@ body {
 
 #table tr:hover {
     background-color: #ddd;
+    zoom: 1.05;
+    font-weight: 400;
 }
 
 #table th {
