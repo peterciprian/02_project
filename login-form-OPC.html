@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login-style.css">
+    <title>Bejelentkezés</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="camera">
+            <i class="fas fa-camera fa-2x" style="color:rgba(255, 255, 255, 0.75)"></i>
+
+        </div>
+        <form action="">
+            <span id="error"></span>
+            <input type="text" id="username" placeholder="   &#9823; Username">
+            <input type="password" id="password" name="password" placeholder="   &#128274; ********">
+            <span id="success"></span>
+            <button type="button" id="button" value="Login" onclick="req()">Login</button>
+
+            <div class="also">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember me</label>
+                <a calss="forgot" onclick="forgot()">Forgot Password?</a>
+            </div>
+        </form>
+        <p class="cr">Copyright &#169; 2018, Your Brand Name.INC</p>
+    </div>
+    <script src="js/OPC-login.js"></script>
+</body>
+
+</html>
