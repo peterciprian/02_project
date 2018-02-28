@@ -71,7 +71,7 @@ function successAjax(xhttp) {
 }
 
 
-getData('/js/users.json', successAjax);
+getData('js/users.json', successAjax);
 
 // Live servert használd mindig!!!!!
 /* IDE ÍRD A FÜGGVÉNYEKET!!!!!! NE EBBE AZ EGY SORBA HANEM INNEN LEFELÉ! */

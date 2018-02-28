@@ -37,12 +37,12 @@ function successAjax(xhttp) {
     });
 
     document.getElementById("statisztika").addEventListener("click", function () {
-        calcPrintOut(userDatas)
+        statKiiras(userDatas)
     });
 }
 
 
-getData('/js/users.json', successAjax);
+getData('js/users.json', successAjax);
 
 // Live servert használd mindig!!!!!
 /* IDE ÍRD A FÜGGVÉNYEKET!!!!!! NE EBBE AZ EGY SORBA HANEM INNEN LEFELÉ! */
@@ -119,7 +119,6 @@ function kilencvenelott(userDatas) {
     var th = document.createElement('th');
     th.innerHTML = dataProps[0];
     tr.appendChild(th);
-    th.bgColor = 'grey';
     for (var i = 0; i < userDatas.length; i++) {
         if (userDatas[i].birthdate < "1990. 01. 01.") {
             tr = table.insertRow(-1);
@@ -146,7 +145,6 @@ function ketezerelott(userDatas) {
         var th = document.createElement('th'); // Table header
         th.innerHTML = dataProps[i];
         tr.appendChild(th);
-        th.bgColor = 'grey';
     }
     for (var i = 0; i < userDatas.length; i++) {
         if (userDatas[i].birthdate < "2000. 01. 01." && userDatas[i].city != "Budapest") {
@@ -179,7 +177,6 @@ function szurtnevek(userDatas) {
         var th = document.createElement('th'); // Table header
         th.innerHTML = dataProps[i];
         tr.appendChild(th);
-        th.bgColor = 'grey';
     }
     for (var i = 0; i < userDatas.length; i++) {
         if (userDatas[i].birthdate > "1990. 01. 01." &&
@@ -204,12 +201,47 @@ function szurtnevek(userDatas) {
 }
 
 // --- 3 legidősebb --------
+
+
+
+function legidosebb3(userDatas) {
+    var col = ["firstname", "lastname", "birthday"];
+    var table = document.createElement('table');
+    table.border = 1;
+    var dataProps = ['Vezetéknév', 'Keresztnév', 'Születési dátum'];
+    var tr = table.insertRow(-1); // Table row
+
+    for (var i = 0; i < dataProps.length; i++) {
+        var th = document.createElement('th'); // Table header
+        th.innerHTML = dataProps[i];
+        tr.appendChild(th);
+    }
+    for (var i = 0; i < userDatas.length; i++) {
+        var eldest = [];
+        var temp = userDatas[0].birthdate;
+        if (userDatas[i].birthdate > temp) {
+            eldest.push(userDatas[i]);
+            tr = table.insertRow(-1);
+
+
+            for (var j = 0; j < col.length; j++) {
+                var tableCell = tr.insertCell(-1);
+                tableCell.innerHTML = eldest[0][col[j]];
+            }
+        }
+    }
+
+    var genTable = document.querySelector('#gentable');
+    genTable.innerHTML = '';
+    genTable.appendChild(table);
+}
+
 // -------- Városok --------
 
 
 
 //------------ stat kiiratás -----------
-function calcPrintOut(userDatas) {
+function statKiiras(userDatas) {
     var stats = document.querySelector('#gentable');
     stats.innerHTML = `<h1>Statisztikák</h1>
         <ul>
@@ -256,11 +288,11 @@ function legfiatalabb(userDatas) {
 }
 // ----------- össz életkor -------------
 function osszeletkor(userDatas) {
-    var tempCount = 0;
+    var ossz = 0;
     for (var i = 0; i < userDatas.length; i++) {
-        tempCount += (2018 - parseInt(userDatas[i].birthdate.slice(0, 4)))
+        ossz += (2018 - parseInt(userDatas[i].birthdate.slice(0, 4)))
     }
-    return tempCount;
+    return ossz;
 }
 
 // ------ Dátum formázás ----------
