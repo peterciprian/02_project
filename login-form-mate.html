@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="/css/login-mate.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="form-container">
+        
+        <form>
+            <p>
+                <span>
+                   
+                </span>
+                <input type="text" class="inputbox" name="username" id="username" placeholder="Username">
+
+            </p>
+            <p>
+                <span>
+                    
+                </span>
+                <input type="password" class="inputbox" name="pass" id="pass" placeholder="*********">
+
+            </p>
+            <p>
+                <span id="error"></span>
+                <span id="success"></span>
+
+
+                <input type="button" value="LOGIN" onclick="clickCheck()">
+            </p>
+            <p id="bottom-line">
+
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember Me</label>
+                <a class="forgot" href="" onclick="makePrompt()">Forgot Password?</a>
+            </p>
+        </form>
+
+    </div>
+    <p class="copyright">Copyright &copy; 2018 Your Brand Name, Inc</p>
+
+    <script src="/js/login-form-mate.js"></script>
+</body>
+
+</html>

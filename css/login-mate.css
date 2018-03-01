@@ -1,0 +1,141 @@
+body {
+    margin: 0 auto;
+    background: radial-gradient(rgb(9, 65, 110), rgb(94, 184, 211));
+}
+
+.form-container {
+    position: relative;
+    margin: 100px auto 10px auto;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    width: 350px;
+    height: 280px;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+form>p:first-child {
+    margin-top: 60px;
+    position: relative;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+}
+
+.inputbox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 14px 14px 50px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+[type='button'] {
+    margin-top: 4px;
+    background: rgba(152, 178, 3, 0.8);
+    color: white;
+    width: 100%;
+    height: 38px;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+[type='button']:hover {
+    background: rgba(151, 33, 4, 0.8);
+}
+
+.copyright {
+    color: white;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#bottom-line {
+    text-align: justify;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: bold;
+}
+
+i {
+    position: absolute;
+}
+
+i.fa-circle {
+    color: rgba(45, 83, 120, 0.85);
+    left: 125px;
+    top: -70px;
+}
+
+i.fa-camera {
+    color: white;
+    left: 165px;
+    top: -35px;
+}
+
+i.fa-camera:hover {
+    text-shadow: 0 0 10px rgb(122, 228, 255);
+}
+
+[type="checkbox"] {
+    margin-left: 25px;
+}
+
+.forgot {
+    margin-left: 75px;
+    font-style: oblique;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+::selection {
+    background: rgb(25, 111, 182);
+    color: white;
+}
+
+span#error {
+    position: absolute;
+    top: 195px;
+    left: 25px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+span#success {
+    position: absolute;
+    top: 195px;
+    left: 110px;
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+.fa-user {
+    left: 15px;
+    top: 16px;
+    color: grey;
+}
+
+.fa-lock {
+    bottom: 143px;
+    left: 35px;
+    color: grey;
+}
+
+.forgot:hover,
+label:hover,
+#remember:hover+label {
+    text-shadow: 0 0 1px rgb(28, 138, 172);
+}
+
+label,
+#remember {
+    cursor: pointer;
+}
