@@ -21,9 +21,10 @@ function successAjax(xhttp) {
       A userDatas NEM GLOBÁLIS változó, ne is tegyétek ki globálisra. Azaz TILOS!
       Ha valemelyik függvényeteknek kell, akkor paraméterként adjátok át.
     */
-    createHTML();
+    //createHTML();
     //createTable(userDatas[0].users);
-
+    let invoke = document.querySelector('.opc');
+    invoke.addEventListener("click", createHTML());
 
 
 
