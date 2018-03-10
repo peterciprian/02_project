@@ -77,23 +77,17 @@ getData('/js/users.json', successAjax);
 function createHTML() {
     let container = document.createElement('div');
     container.className = 'container';
+
     let row = document.createElement('div');
     row.className = 'row';
+
     let column = document.createElement('div');
     column.className = 'col-xs-12';
-    let btnGroup = document.createElement('div');
-    btnGroup.className = 'btn-group';
-    btnGroup.innerHTML = `<button id="stat" class="btn btn-info">Statisztika</button>
-    <button id="bf1990" class="btn btn-success">1990 előttiek</button>
-    <button id="oldests" class="btn btn-success">A 3 legidősebb</button>
-    <button id="nevek" class="btn btn-success">Szűrt nevek</button>
-    <button id="varosok" class="btn btn-success">Városok</button>
-    <button id="nbp2000" class="btn btn-success">2000 előttiek</button>`
+
     let statField = document.createElement('div');
     statField.className = 'stat-field'
     statField.style.display = "none";
-    statField.innerHTML = `<div class="panel-heading">Statisztikák</div>
-    <div class="panel-body"></div>`
+
     let tableField = document.createElement('div');
     tableField.className = 'table-field';
 
@@ -102,6 +96,31 @@ function createHTML() {
     column.appendChild(tableField);
     row.appendChild(column);
     container.appendChild(row);
-    document.querySelector('.modal-header').appendChild(btnGroup);
+    document.querySelector('.modal-header').innerHTML = '';
+    document.querySelector('.modal-header').innerHTML = `<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span></button>`;
+
+    document.querySelector('.modal-body').innerHTML = '';
     document.querySelector('.modal-body').appendChild(container);
+    loadAdmin();
+}
+
+function loadAdmin() {
+    let btnGroup = document.createElement('div');
+    btnGroup.className = 'btn-group';
+    btnGroup.innerHTML = `<button id="stat" class="btn btn-info">Statisztika</button>
+    <button id="bf1990" class="btn btn-success">1990 előttiek</button>
+    <button id="oldests" class="btn btn-success">A 3 legidősebb</button>
+    <button id="nevek" class="btn btn-success">Szűrt nevek</button>
+    <button id="varosok" class="btn btn-success">Városok</button>
+    <button id="nbp2000" class="btn btn-success">2000 előttiek</button>`;
+
+    document.querySelector('.stat-field').innerHTML = `<div class="panel-heading">Statisztikák</div>
+    <div class="panel-body"></div>`;
+
+    document.querySelector('.modal-header').innerHTML = '';
+    document.querySelector('.modal-header').innerHTML = `<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span></button>`;
+
+    document.querySelector('.modal-header').appendChild(btnGroup);
 }
