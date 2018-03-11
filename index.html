@@ -62,15 +62,13 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-
-
                     </div>
                     <div class="modal-body">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- OPC edit-->
+
         <div class="upper main-container">
             <div class="upper-sub">
 
@@ -219,21 +217,20 @@
         <div class="footerClass">
             <label>Copyright © 2018</label>
 
-
             <a href="https://vimeo.com/">
-                <img src="/img/Vimeo.png" alt="vimeo" class="elso">
+                <img src="/img/Vimeo.png" alt="vimeo" class="elso" data-toggle="tooltip" data-placement="top" title="vimeo.com">
             </a>
             <a href="https://coincash.eu/arfolyamok/">
-                <img src="/img/btc.png" alt="Btc" class="masodik">
+                <img src="/img/btc.png" alt="Btc" class="masodik" data-toggle="tooltip" data-placement="top" title="bitcoin árfolyamok">
             </a>
             <a href="https://www.youtube.com/">
-                <img src="/img/youtube.png" alt="Youtube" class="harmadik">
+                <img src="/img/youtube.png" alt="Youtube" class="harmadik" data-toggle="tooltip" data-placement="top" title="youtube.com">
             </a>
             <a href="https://www.facebook.com/">
-                <img src="/img/Facebook.png" alt="Facebook" class="negyedik">
+                <img src="/img/Facebook.png" alt="Facebook" class="negyedik" data-toggle="tooltip" data-placement="top" title="facebook.com">
             </a>
             <a href="https://twitter.com/">
-                <img src="/img/twt.png" alt="Twitter" class="otodik">
+                <img src="/img/twt.png" alt="Twitter" class="otodik" data-toggle="tooltip" data-placement="top" title="twitter.com">
 
             </a>
 
@@ -242,9 +239,13 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/js/OPC_jquery.js"></script>
     <script src="/js/OPC_adminPage.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     <script>
         window.sr = ScrollReveal();
 
