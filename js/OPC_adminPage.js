@@ -16,39 +16,12 @@ function successAjax(xhttp) {
       ITT HÍVD MEG! 
     */
     let invoke = document.querySelector('.opc');
-    invoke.addEventListener("click", createHTML());
-
-
-    let bf = document.querySelector('#bf1990');
-    bf.addEventListener('click', function () {
-        bf1990(userDatas[0].users);
-    });
-
-    let old = document.querySelector('#oldests')
-    old.addEventListener('click', function () {
-        oldests(userDatas[0].users);
-    });
-    let nev = document.querySelector('#nevek');
-    nev.addEventListener('click', function () {
-        nevek(userDatas[0].users);
-    });
-    let varos = document.querySelector('#varosok');
-    varos.addEventListener('click', function () {
-        varosok(userDatas[0].users);
-    });
-    let nbp = document.querySelector('#nbp2000');
-    nbp.addEventListener('click', function () {
-        nbp2000(userDatas[0].users);
-    });
-    let sta = document.querySelector('#stat');
-    sta.addEventListener('click', function () {
-        stat(userDatas[0].users);
-    });
+    invoke.addEventListener("click", loadLogin(userDatas[0].users));
 }
 //////////////////////////////////////////////////////////////////////////////////
 getData('/js/users.json', successAjax);
 
-function createHTML() {
+function createHTML(datas) {
     let container = document.createElement('div');
     container.className = 'container';
 
@@ -72,12 +45,46 @@ function createHTML() {
 
     document.querySelector('.modal-body').innerHTML = '';
     document.querySelector('.modal-body').appendChild(container);
-
-
-    createAdmin();
+    //
+    createAdmin(datas);
 }
 
-function createAdmin() {
+function loadLogin(datas) {
+    document.querySelector('.modal-header').innerHTML = '';
+    document.querySelector('.modal-body').innerHTML = '';
+    document.querySelector('.modal-header').innerHTML = `<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span></button>`;
+
+    let login = document.createElement('div');
+    login.innerHTML = `<div class="container">
+    <div class="camera">
+        <i class="fas fa-camera fa-2x" style="color:rgba(255, 255, 255, 0.75)"></i>
+
+    </div>
+    <form>
+        <span id="error"></span>
+        <input type="text" id="username" placeholder="   &#9823; Username">
+        <input type="password" id="password" name="password" placeholder="   &#128274; ********">
+        <span id="success"></span>
+        <button type="button" id="loginButton" value="Login">Login</button>
+
+        <div class="also">
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember me</label>
+            <a calss="forgot" onclick="forgot()">Forgot Password?</a>
+        </div>
+    </form>
+    <p class="cr">Copyright &#169; 2018, Your Brand Name.INC</p>
+</div>`;
+
+    document.querySelector('.modal-body').appendChild(login);
+    document.querySelector('#loginButton').addEventListener('click', function () {
+        createHTML(datas);
+    });
+}
+
+function createAdmin(datas) {
+    //ez nem jó!!           document.querySelector('.modal-body').innerHTML = ''; //ez nem jó!!
     let btnGroup = document.createElement('div');
     btnGroup.className = 'btn-group';
     btnGroup.innerHTML = `<button id="stat" class="btn btn-info">Statisztika</button>
@@ -87,6 +94,7 @@ function createAdmin() {
     <button id="varosok" class="btn btn-success">Városok</button>
     <button id="nbp2000" class="btn btn-success">2000 előttiek</button>`;
 
+    // ez nem kell!         document.querySelector('.modal-body').appendChild(statField);
     document.querySelector('.stat-field').innerHTML = `<div class="panel-heading">User adatok</div>
     <div class="panel-body"></div>`;
 
@@ -95,16 +103,35 @@ function createAdmin() {
     <span aria-hidden="true">&times;</span></button>`;
 
     document.querySelector('.modal-header').appendChild(btnGroup);
-}
 
-function createLogin() {
+    let bf = document.querySelector('#bf1990');
+    bf.addEventListener('click', function () {
+        bf1990(datas);
+    });
 
-
-    document.querySelector('.modal-header').innerHTML = '';
-    document.querySelector('.modal-header').innerHTML = `<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span></button>`;
-
-
+    let old = document.querySelector('#oldests')
+    old.addEventListener('click', function () {
+        oldests(datas);
+    });
+    let nev = document.querySelector('#nevek');
+    nev.addEventListener('click', function () {
+        nevek(datas);
+    });
+    let varos = document.querySelector('#varosok');
+    varos.addEventListener('click', function () {
+        varosok(datas);
+    });
+    let nbp = document.querySelector('#nbp2000');
+    nbp.addEventListener('click', function () {
+        nbp2000(datas);
+    });
+    let sta = document.querySelector('#stat');
+    sta.addEventListener('click', function () {
+        stat(datas);
+    });
+    $("#stat").click(function () {
+        $(".stat-field").toggle();
+    });
 }
 
 
@@ -299,4 +326,87 @@ function nbp2000(taplalek) {
     let eredmeny = arr;
     document.body.querySelector('.panel-body').innerHTML = '';
     createTable(eredmeny);
+}
+
+//----------LOGIN----------
+var users = [{
+        email: 'baratheon@got.com',
+        password: 'baratheon'
+    },
+    {
+        email: 'bolton@got.com',
+        password: 'bolton'
+    },
+    {
+        email: 'florent@got.com',
+        password: 'florent'
+    },
+    {
+        email: 'lennister@got.com',
+        password: 'lennister'
+    },
+    {
+        email: 'martell@got.com',
+        password: 'martell'
+    },
+    {
+        email: 'redwyne@got.com',
+        password: 'redwyne'
+    },
+    {
+        email: 'stark@got.com',
+        password: 'stark'
+    },
+    {
+        email: 'umber@got.com',
+        password: 'umber'
+    },
+    {
+        email: 'tully@got.com',
+        password: 'tully'
+    },
+    {
+        email: 'targaryen@got.com',
+        password: 'targaryen'
+    }
+];
+
+function forgot() {
+    let e = prompt("Add meg az e - mail címedet!");
+    if (e.includes("@")) {
+        alert("Az új jelszót elküldtük.");
+    } else {
+        alert("Adj meg egy valós e-mail címet!");
+    }
+}
+let elrontottad = 0;
+
+function req(datas) {
+    if (document.querySelector("#username").value == '' || document.querySelector("#password").value == '') {
+        document.querySelector("#error").innerHTML = 'Meg kell adnod a felhasználóneved és jelszavad.';
+    } else {
+        try {
+            var found = false;
+            let i = 0;
+            while (found == false || i < users.length) {
+                if (users[i].email == document.querySelector("#username").value && users[i].password == document.querySelector("#password").value) {
+                    found = true;
+                    document.querySelector("#error").innerHTML = '';
+                    document.querySelector("#success").innerHTML = `Belépve, mint ${users[i].email}`;
+                    createAdmin(datas);
+
+                    break;
+                } else {
+                    i++;
+                }
+            }
+
+        } catch (e) {
+            document.querySelector("#error").innerHTML = "Valamit nem jól adtál meg, próbáld meg újra!";
+        }
+        if (found == false) {
+            elrontottad++;
+        }
+
+    }
 }
