@@ -85,7 +85,7 @@ function loadLogin(datas) {
 
     document.querySelector('.modal-body').appendChild(login);
     document.querySelector('#loginButton').addEventListener('click', function () {
-        createHTML(datas);
+        req(datas);
     });
 }
 
@@ -399,7 +399,7 @@ function req(datas) {
                     found = true;
                     document.querySelector("#error").innerHTML = '';
                     document.querySelector("#success").innerHTML = `Belépve, mint ${users[i].email}`;
-                    createAdmin(datas);
+                    createHTML(datas);
 
                     break;
                 } else {
