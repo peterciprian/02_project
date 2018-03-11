@@ -56,18 +56,14 @@ function createHTML() {
     row.className = 'row';
 
     let column = document.createElement('div');
-    column.className = 'col-xs-12';
+    column.className = 'col-xs-8 col-offset-2';
 
     let statField = document.createElement('div');
     statField.className = 'stat-field'
     statField.style.display = "none";
 
-    let tableField = document.createElement('div');
-    tableField.className = 'table-field';
-
     //column.appendChild(btnGroup);
     column.appendChild(statField);
-    column.appendChild(tableField);
     row.appendChild(column);
     container.appendChild(row);
     document.querySelector('.modal-header').innerHTML = '';
@@ -76,6 +72,8 @@ function createHTML() {
 
     document.querySelector('.modal-body').innerHTML = '';
     document.querySelector('.modal-body').appendChild(container);
+
+
     createAdmin();
 }
 
@@ -112,6 +110,7 @@ function createLogin() {
 
 //////////////////////////////////////////////////////////
 function gererateHeaders(headerData) {
+    let thead = document.createElement('thead')
     let tr = document.createElement('tr');
     let keys;
     for (i in headerData[0]) {
@@ -119,11 +118,15 @@ function gererateHeaders(headerData) {
         th.textContent = i;
         tr.appendChild(th);
     }
-    return tr;
+    thead.appendChild(tr);
+    return thead;
 }
 
 function createTable(taplalek) {
     let table = document.createElement('table');
+    let tbody = document.createElement('tbody');
+    table.classList.add('table', 'table-bordered', 'table-hover');
+    //table.style.width = '100%';
     table.appendChild(gererateHeaders(taplalek));
     for (i in taplalek) {
         let tr = document.createElement('tr');
@@ -137,8 +140,10 @@ function createTable(taplalek) {
             }
             tr.appendChild(td);
         }
-        table.appendChild(tr);
+        tbody.appendChild(tr);
     }
+    table.appendChild(tbody);
+    document.querySelector('.panel-body').style.overflowX = 'auto';
     document.querySelector('.panel-body').appendChild(table);
 }
 
