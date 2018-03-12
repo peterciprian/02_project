@@ -46,6 +46,10 @@ function createHTML(datas) {
     document.querySelector('.modal-body').innerHTML = '';
     document.querySelector('.modal-body').appendChild(container);
     //
+    document.querySelector('.modal-body').style.height = "";
+    document.querySelector('.modal-body').style.background = "";
+    document.querySelector('.modal-header').style.backgroundColor = "";
+    //
     createAdmin(datas);
 }
 
