@@ -62,8 +62,11 @@ function loadLogin(datas) {
     login.style.backgroundSize = "cover";
     login.style.height = "100%"
     login.style.margin = "0 auto";*/
-    login.innerHTML = `<div class="container" style=" background: radial-gradient(#009999, #00cc66, #3399ff); height: 300px; position: absolute; top: 200%; left: 50%; transform: translate(-50%, -50%); width: 400px; margin: 50px auto; padding: 80px 20px 20px 20px; border: 1px solid white; border-radius: 10px;">
-    <div class="camera" style="position: absolute; font-size: 30px; left: 150px; top: -30px; height: 100px; width: 100px; background-color: rgba(74, 83, 92, 0.80); border-radius: 50%; display: inline-block; text-align: center;">
+    document.querySelector('.modal-body').style.height = "450px";
+    document.querySelector('.modal-body').style.background = "radial-gradient(#009999, #00cc66, #3399ff)";
+    document.querySelector('.modal-header').style.backgroundColor = "rgba(74, 83, 92, 0.80)";
+    login.innerHTML = `<div class="container" style=" height: 300px; position: absolute; top: 160px; left: 50%; transform: translate(-50%, -50%); width: 400px; margin: 50px auto; padding: 80px 20px 20px 20px; border: 1px solid white; border-radius: 10px;">
+    <div class="camera" style="position: absolute; font-size: 30px; left: 150px; top: -50px; height: 100px; width: 100px; background-color: rgba(74, 83, 92, 0.80); border-radius: 50%; display: inline-block; text-align: center;">
         <i class="fas fa-camera fa-2x" style="color:rgba(255, 255, 255, 0.75); position: absolute; left: 20px; top:18px;"></i>
 
     </div>
