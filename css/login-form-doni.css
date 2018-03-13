@@ -1,45 +1,47 @@
-body {
-    margin: 0 auto;
+#D {
     background: radial-gradient(rgb(9, 65, 110), rgb(94, 184, 211), rgb(143, 136, 207));
 }
 
-.form-container {
+#D .form-container {
     position: relative;
     margin: 100px auto 10px auto;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 8px;
     width: 350px;
-    height: 280px;
+    height: 400px;
     padding: 20px;
     font-family: 'Nunito', sans-serif;
 }
 
-form>p:first-child {
+#D form {
+    margin: 0;
+}
+#D form>p:first-child {
     margin-top: 60px;
     position: relative;
 }
 
-p {
+#D p {
     text-align: center;
     width: 100%;
 }
 
-.inputbox {
-    width: 100%;
+#D .inputbox {
+    width: 90%;
     box-sizing: border-box;
-    padding: 14px 14px 14px 50px;
+    padding: 14px 30px 14px 30px;
     border: none;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: 18px;
     font-family: inherit;
 }
 
-[type='button'] {
+#D [type='button'] {
     margin-top: 4px;
     background: rgba(3, 98, 178, 0.8);
     color: white;
-    width: 100%;
+    width: 90%;
     height: 38px;
     border: none;
     font-family: inherit;
@@ -48,94 +50,85 @@ p {
     letter-spacing: 2px;
 }
 
-[type='button']:hover {
+#D [type='button']:hover {
     background: rgba(4, 85, 151, 0.8);
 }
 
-.copyright {
+/*.copyright {
     color: white;
     font-size: 12px;
     font-family: 'Nunito', sans-serif;
-}
+}*/
 
-#bottom-line {
+#D #bottom-line {
     text-align: justify;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.65);
     font-weight: bold;
 }
 
-i {
+#D #dcircle, #D #dcamera {
     position: absolute;
 }
 
-i.fa-circle {
+#D #dcircle {
     color: rgba(45, 83, 120, 0.85);
-    left: 125px;
-    top: -70px;
+top:-33px;
+left:243px;
 }
 
-i.fa-camera {
+#D #dcamera {
     color: white;
-    left: 165px;
-    top: -35px;
+    top:0;
+    left:276px;
+
 }
 
-i.fa-camera:hover {
+#D #dcamera:hover{
     text-shadow: 0 0 10px rgb(122, 228, 255);
 }
 
-[type="checkbox"] {
+#D [type="checkbox"] {
     margin-left: 25px;
 }
 
-.forgot {
-    margin-left: 75px;
+#D .forgot {
+    margin-left: 280px;
     font-style: oblique;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.65);
 }
 
-::selection {
+#D ::selection {
     background: rgb(25, 111, 182);
     color: white;
 }
 
-span#error {
-    position: absolute;
+#D span#error {
+   /* position: absolute;
     top: 195px;
-    left: 25px;
+    left: 25px;*/
     color: rgb(255, 0, 0);
     font-weight: bold;
 }
 
-span#success {
-    position: absolute;
+#D span#success {
+  /*  position: absolute;
     top: 195px;
-    left: 110px;
+    left: 110px;*/
     color: rgb(0, 255, 0);
     font-weight: bold;
 }
 
-.fa-user {
-    left: 15px;
-    top: 16px;
-    color: grey;
-}
 
-.fa-lock {
-    bottom: 143px;
-    left: 35px;
-    color: grey;
-}
 
-.forgot:hover,
-label:hover,
-#remember:hover+label {
+#D .forgot:hover,
+#D label:hover,
+#D #remember:hover+label {
     text-shadow: 0 0 1px rgb(28, 138, 172);
 }
 
-label,
-#remember {
+#D label,
+#D #remember {
     cursor: pointer;
 }
