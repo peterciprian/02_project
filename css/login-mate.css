@@ -1,9 +1,9 @@
-body {
+#kukac body {
     margin: 0 auto;
     background: radial-gradient(rgb(9, 65, 110), rgb(94, 184, 211));
 }
 
-.form-container {
+#kukac .form-container {
     position: relative;
     margin: 100px auto 10px auto;
     background: transparent;
@@ -15,17 +15,17 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-form>p:first-child {
+#kukac form>p:first-child {
     margin-top: 60px;
     position: relative;
 }
 
-p {
+#kukac p {
     text-align: center;
     width: 100%;
 }
 
-.inputbox {
+#kukac .inputbox {
     width: 100%;
     box-sizing: border-box;
     padding: 14px 14px 14px 50px;
@@ -35,7 +35,7 @@ p {
     font-family: inherit;
 }
 
-[type='button'] {
+#kukac [type='button'] {
     margin-top: 4px;
     background: rgba(152, 178, 3, 0.8);
     color: white;
@@ -48,17 +48,17 @@ p {
     letter-spacing: 2px;
 }
 
-[type='button']:hover {
+#kukac [type='button']:hover {
     background: rgba(151, 33, 4, 0.8);
 }
 
-.copyright {
+#kukac .copyright {
     color: white;
     font-size: 12px;
     font-family: 'Nunito', sans-serif;
 }
 
-#bottom-line {
+#kukac #bottom-line {
     text-align: justify;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.65);
@@ -69,39 +69,39 @@ i {
     position: absolute;
 }
 
-i.fa-circle {
+#kukac i.fa-circle {
     color: rgba(45, 83, 120, 0.85);
     left: 125px;
     top: -70px;
 }
 
-i.fa-camera {
+#kukac i.fa-camera {
     color: white;
     left: 165px;
     top: -35px;
 }
 
-i.fa-camera:hover {
+#kukac i.fa-camera:hover {
     text-shadow: 0 0 10px rgb(122, 228, 255);
 }
 
-[type="checkbox"] {
+#kukac [type="checkbox"] {
     margin-left: 25px;
 }
 
-.forgot {
+#kukac .forgot {
     margin-left: 75px;
     font-style: oblique;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.65);
 }
 
-::selection {
+#kukac ::selection {
     background: rgb(25, 111, 182);
     color: white;
 }
 
-span#error {
+#kukac span#error {
     position: absolute;
     top: 195px;
     left: 25px;
@@ -109,7 +109,7 @@ span#error {
     font-weight: bold;
 }
 
-span#success {
+#kukac span#success {
     position: absolute;
     top: 195px;
     left: 110px;
@@ -117,25 +117,25 @@ span#success {
     font-weight: bold;
 }
 
-.fa-user {
+#kukac .fa-user {
     left: 15px;
     top: 16px;
     color: grey;
 }
 
-.fa-lock {
+#kukac .fa-lock {
     bottom: 143px;
     left: 35px;
     color: grey;
 }
 
-.forgot:hover,
-label:hover,
-#remember:hover+label {
+#kukac .forgot:hover,
+#kukac label:hover,
+#kukac #remember:hover+label {
     text-shadow: 0 0 1px rgb(28, 138, 172);
 }
 
-label,
-#remember {
+#kukac label,
+#kukac #remember {
     cursor: pointer;
 }
